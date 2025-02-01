@@ -7,6 +7,8 @@ const Header = () => {
         <SignInButton />
       </SignedOut>
       <SignedIn>
+        // UserButton is a Clerk component that displays the user's name and
+        profile picture
         <UserButton />
       </SignedIn>
     </div>
