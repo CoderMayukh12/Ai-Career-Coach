@@ -6,7 +6,6 @@ import { getUserOnboardingStatus } from "@/actions/user";
 export default async function OnboardingPage() {
   // Check if user is already onboarded
   const { isOnboarded } = await getUserOnboardingStatus();
-
   if (isOnboarded) {
     redirect("/dashboard");
   }
